@@ -1,0 +1,17 @@
+<div class="spinner_cont">
+  <img src="../../../assets/img/details/spinner3.gif" *ngIf="showSpinner" alt="">
+</div>
+<div class="rolex">
+ <div class="coll">
+   <div class="item" *ngFor="let item of collectionsRolex">
+     <h4>{{item.collection}}</h4>
+     <h3>{{item.model}}</h3>
+     <div class="img_cont">
+       <img [src]="item.img || item.img1" alt="">
+     </div>
+     <a (click)="openDescribe(item.id, item.collection, item.model, item.img, item.url)">
+      Discover more</a>
+   </div>
+ </div>
+</div>
+<app-discover [object]="discoverInputObject" (sendmes)="closeDiscoverComp()" *ngIf="showDiscoverComp"></app-discover>

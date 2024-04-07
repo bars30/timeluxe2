@@ -1,0 +1,11 @@
+<div class="discover">
+  <div class="close" (click)="close()">X</div>
+  <div class="discover_cont">
+    <h1>{{object.coll}}</h1>
+    <p>{{object.model}}</p>
+    <div class="img_cont">
+      <img [src]="object.img" alt="">
+    </div>
+    <a [href]="object.href" target="_self"></a>
+  </div>
+</div>
