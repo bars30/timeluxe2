@@ -7,6 +7,7 @@ import { AdminComponent } from './adminpages/admin/admin.component';
 import { BestselledComponent } from './adminpages/bestselled/bestselled.component';
 import { RolexStoreComponent } from './components/storecompo/rolex-store/rolex-store.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
       {
         path: 'contact',
         component: ContactComponent
+      },
+      {
+        path: 'blog',
+        component: BlogComponent
       }
     ]
   },

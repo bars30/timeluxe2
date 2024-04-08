@@ -38,7 +38,43 @@ export class StoreComponent {
   }
   showDiscoverComponent: boolean = false;
   selectedBrand:any = "Rolex";
-  bestselledWatches !: Bestselled[];
+  bestselledWatches : Bestselled[] = [
+    {
+      "id": "1",
+      "brand": "Rolex",
+      "model": "Rolex Submariner",
+      "img": "https://i.ibb.co/2KPf9jG/1.png",
+      "price": "15000$"
+    },
+    {
+      "id": "5",
+      "brand": "Breitling",
+      "model": "Tag Heuer Carrera",
+      "img": "https://i.ibb.co/wLfgCzQ/5-jpg.png",
+      "price": " 4,000$"
+    },
+    {
+      "id": "2",
+      "brand": "Cartier",
+      "model": "Caertier Tank",
+      "img": "https://i.ibb.co/fCDT1Ps/2-jpg.png",
+      "price": " 3,500$"
+    },
+    {
+      "id": "3",
+      "brand": "Hublot",
+      "model": "Hublot Big Bang",
+      "img": "https://i.ibb.co/pw1mbbt/3-jpg.png",
+      "price": " 50,000$"
+    },
+    {
+      "id": "4",
+      "brand": "Breitling",
+      "model": "Breitling Super Chronomat",
+      "img": "https://i.ibb.co/zh5yjy2/4-jpg.png",
+      "price": " 10,000$"
+    }
+  ];
   stupArray : RequestModS = {
     watches: "df",
     message: 'gyh'
@@ -66,7 +102,7 @@ export class StoreComponent {
     this.loadNextHttp = this.rolexSer.loadNext
 
     this.req.getData<RequestModS>(enviroenment.bestselledwatches.get).subscribe((res)=>{
-      this.stupArray = res;
+      this.stupArray = res; 
       this.bestselledWatches = this.stupArray.watches
     })
     // this.getDataRolex()
