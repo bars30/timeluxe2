@@ -19,7 +19,8 @@ import { Router } from '@angular/router';
 export class RolexStoreComponent {
   @Input() collectionsRolex: any = [];
   showDiscoverComp: boolean = false;
-  showSpinner: boolean = false;
+  showSpinner: boolean = true;
+empty: any = []
 
   discoverInputObject = {
     id: '',
@@ -27,6 +28,14 @@ export class RolexStoreComponent {
     model: '',
     img: '',
     href: '',
+  }
+  ngAfterViewInit(){
+    if(this.collectionsRolex == this.empty){
+      this.showSpinner = true
+    } else {
+      this.showSpinner = false
+      
+    }
   }
 
   constructor(private req: RequestService,
@@ -40,6 +49,8 @@ export class RolexStoreComponent {
     this.discoverInputObject.img = img;
     this.discoverInputObject.href = href;
     this.showDiscoverComp = true;
+
+
   }
   closeDiscoverComp(){
     this.showDiscoverComp = false;
