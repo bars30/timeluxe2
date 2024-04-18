@@ -1,6 +1,11 @@
 .poster {
  width: 100%;
 }
+.poster .simg, .poster .timg, 
+.poster .foimg, .poster .fiimg {
+    display: none;
+}
+
 .poster img {
  width: 100%;
 }
@@ -320,4 +325,49 @@ app-discover {
 }
 
 
+@media only screen and (max-width: 905px){
+    .poster .simg {
+        display: block;
+    }
+    .poster .fimg, .poster .timg, 
+    .poster .foimg, .poster .fiimg {
+        display: none;
+    }
+}
 
+@media only screen and (max-width: 860px){
+    .poster .timg {
+        display: block;
+    }
+    .poster .fimg, .poster .simg, 
+    .poster .foimg, .poster .fiimg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 785px){
+    .poster .foimg {
+        display: block;
+    }
+    .poster .fimg, .poster .simg, 
+    .poster .timg, .poster .fiimg {
+        display: none;
+    }
+    .bestselled {
+        margin: 34px 0;
+    }
+    
+    
+}
+@media only screen and (max-width: 640px){
+    .poster .fiimg {
+        display: block;
+    }
+    .poster .fimg, .poster .simg, 
+    .poster .timg, .poster .foimg {
+        display: none;
+    }
+}
+.bestselled .item {
+    cursor: pointer;
+}

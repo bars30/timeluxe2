@@ -133,3 +133,6 @@ h5 {
         width: 31%;
     }
 }
+.item {
+    cursor: pointer;
+}

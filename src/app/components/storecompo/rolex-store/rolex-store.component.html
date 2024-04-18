@@ -7,9 +7,9 @@
      <h4>{{item.collection}}</h4>
      <h3>{{item.model}}</h3>
      <div class="img_cont">
-       <img [src]="item.img || item.img1" alt="">
+       <img [src]="item.img || item.img1 || item.img2" alt="">
      </div>
-     <a (click)="openDescribe(item.id, item.collection, item.model, item.img, item.url)">
+     <a (click)="openDescribe(item.id, item.collection, item.model, item.img || item.img1 || item.img2, item.url)">
       Discover more</a>
    </div>
  </div>

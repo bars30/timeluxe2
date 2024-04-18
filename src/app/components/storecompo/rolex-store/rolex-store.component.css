@@ -165,5 +165,7 @@ color: gray;
         font-size: 13px !important;
     }
 }
-
+.item {
+    cursor: pointer;
+}
 

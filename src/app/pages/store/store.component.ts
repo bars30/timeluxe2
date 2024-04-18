@@ -108,37 +108,37 @@ export class StoreComponent {
 
     this.rolexSer.loadNext$.subscribe((loadNext) => {
     
-        this.collectionsPatekPhillipe = this.patekPhillipeServ.patekphilippecoll
+        // this.collectionsPatekPhillipe = this.patekPhillipeServ.patekphilippecoll
 
         
-          this.req.getData<RequestModS>(enviroenment.patekphillipe.grandcomplications.get).subscribe((res)=>{
-            console.log(res);
-            for (let index = 0; index < res.cont.length; index++) {
-              this.collectionsPatekPhillipe.push(res.cont[index])
-            }   
-            console.log('Patek Philippe');
+          // this.req.getData<RequestModS>(enviroenment.patekphillipe.grandcomplications.get).subscribe((res)=>{
+          //   console.log(res);
+          //   for (let index = 0; index < res.cont.length; index++) {
+          //     this.collectionsPatekPhillipe.push(res.cont[index])
+          //   }   
+          //   console.log('Patek Philippe'); 
             
-          })
-          this.req.getData<RequestModS>(enviroenment.audemarspiguet.get).subscribe((res)=>{
-            console.log(res);
-            for (let index = 0; index < res.cont.length; index++) {
-              this.collectionsAudemarsPiguet.push(res.cont[index])
-            }   
-            })
+          // })
+          // this.req.getData<RequestModS>(enviroenment.audemarspiguet.get).subscribe((res)=>{
+          //   console.log(res);
+          //   for (let index = 0; index < res.cont.length; index++) {
+          //     this.collectionsAudemarsPiguet.push(res.cont[index])
+          //   }   
+          //   })
           
-            this.req.getData<RequestModS>(enviroenment.cartier.tank.get).subscribe((res)=>{
-              console.log(res);
-              for (let index = 0; index < res.cont.length; index++) {
-                this.collectionsCartier.push(res.cont[index])
-              }   
-              })
+          //   this.req.getData<RequestModS>(enviroenment.cartier.tank.get).subscribe((res)=>{
+          //     console.log(res);
+          //     for (let index = 0; index < res.cont.length; index++) {
+          //       this.collectionsCartier.push(res.cont[index])
+          //     }   
+          //     })
 
-              this.req.getData<RequestModS>(enviroenment.jaeger.reservo.get).subscribe((res)=>{
-                console.log(res);
-                for (let index = 0; index < res.cont.length; index++) {
-                  this.collectionsJaeger.push(res.cont[index])
-                }   
-                })
+          //     this.req.getData<RequestModS>(enviroenment.jaeger.reservo.get).subscribe((res)=>{
+          //       console.log(res);
+          //       for (let index = 0; index < res.cont.length; index++) {
+          //         this.collectionsJaeger.push(res.cont[index])
+          //       }   
+          //       })
   
       
       
