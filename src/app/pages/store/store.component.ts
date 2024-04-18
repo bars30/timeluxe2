@@ -372,7 +372,7 @@ export class StoreComponent {
     this.collectionsRolex = this.rolexSer.collectionsRolex
 
     this.rolexSer.loadNext$.subscribe((loadNext) => {
-      if (loadNext) {
+    
         this.collectionsPatekPhillipe = this.patekPhillipeServ.patekphilippecoll
 
         
@@ -405,7 +405,7 @@ export class StoreComponent {
                 }   
                 })
   
-      }
+      
       
       
       
